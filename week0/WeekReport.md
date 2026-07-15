@@ -24,3 +24,12 @@ LOG:
 Make up a plan to got through torch baisc and deep learning theory.
 Using https://github.com/pytorch/tutorials and https://github.com/d2l-ai/d2l-en
 Now finished d2l cp1 introductioni.
+
+Day 3
+Got to chapter 2preliminaries. Finished ndarray, linear algebra and calculus.  
+The knowledge in book about linera algebra ,Derivatives and Gradients is just warm up.  
+Go deeper in there topics later is necessary.  
+Will gome back to this topic when meet difficult in later chapters.
+
+When doing the linera algebra warm up, found the data strecture maters a lot for large scale matrix calculation.
+It is necessary to know the tensor memory archiecture.
