@@ -34,12 +34,12 @@ Will gome back to this topic when meet difficult in later chapters.
 When doing the linera algebra warm up, found the data strecture maters a lot for large scale matrix calculation.
 It is necessary to know the tensor memory archiecture.
 
-Day 3
+Day 4
 Go through the math concepts, deverative, limitation, gradient, matrix operation.
 Tyler expension. 拉格朗日中值定理。
 Paper math work.
 
-Day 4
+Day 5
 Finished chapter auto-gradient. Learnt gradient calculation in torch, warm up with the linear algebra.  
 Learnt the Jacobian matrix and Jacobian vector. And how they used in the gradient calculation.  
 The gradient cal aim to optimize the loss function. Loss = L(y), y = f(x).
