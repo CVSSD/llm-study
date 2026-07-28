@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: llmstudy
+Version: 0.1.0
+Summary: My LLM learning project
+Requires-Dist: torch
+Requires-Dist: d2l
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas

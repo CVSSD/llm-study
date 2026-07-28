@@ -40,3 +40,17 @@ Supervised learning includes tasks such as classification, regression, tagging, 
 Unsupervised learning uses unlabeled data to discover hidden patterns or structures, such as clustering and dimensionality reduction.  
 
 # Linera algebra
+The linear algebra is the basic of the mechaine learning.    
+机器学习通过训练一组权重实现数据A到数据B的变化，从集合A到集合B的映射。    
+以上概念和矩阵运算的概念相符。矩阵运算是进行机器学习的基础。    
+同时矩阵运算可以将单次运算拆解为同时运行的多次计算。因此天生适配GPU。   
+CORRECT VERSION：  
+机器学习的目标是学习一个从输入数据集合 A 到输出数据集合 B 的映射函数。  
+在监督学习中，我们通常利用大量样本训练模型，使模型自动学习一组参数（权重 Weight 和偏置 Bias），从而逼近这个映射关系。  
+对于线性层而言，这种映射可以表示为  
+y=Wx+b  
+其中权重矩阵 W 决定了输入特征如何被线性变换到新的特征空间，因此矩阵本质上就是线性变换的数学表示。  
+多层神经网络则通过不断重复"矩阵变换 + 非线性激活"，逐步学习越来越复杂的数据映射，而不仅仅是简单的线性关系  
+
+矩阵乘法由大量彼此独立的乘法与加法组成，不同元素之间通常可以并行计算，因此非常适合 GPU 的 SIMD/SIMT 并行计算架构。GPU 能够同时调度成千上万个计算核心完成这些运算，从而显著提高神经网络训练和推理速度。  
+

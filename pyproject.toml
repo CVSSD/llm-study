@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "llmstudy"
+version = "0.1.0"
+description = "My LLM learning project"
+dependencies = [
+    "torch",
+    "d2l",
+    "matplotlib",
+    "numpy",
+    "pandas"
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/llmstudy/__init__.py
+src/llmstudy.egg-info/PKG-INFO
+src/llmstudy.egg-info/SOURCES.txt
+src/llmstudy.egg-info/dependency_links.txt
+src/llmstudy.egg-info/requires.txt
+src/llmstudy.egg-info/top_level.txt
+src/llmstudy/data/SyntheticRegressionData.py
+src/llmstudy/data/__init__.py
+src/llmstudy/visualization/__init__.py
+src/llmstudy/visualization/plot.py
+src/utils/__init__.py
+src/utils/utils.py
