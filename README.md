@@ -1,5 +1,12 @@
 # LLM System Study: Efficient LLM Deployment Under Resource Constraints
 
+ESL (Elements of Statistical Learning)  
+Understanding Machine Learning (Shalev-Shwartz)  
+Pattern Recognition and Machine Learning (Bishop)  
+https://web.stanford.edu/class/cs224n/?utm_source=chatgpt.com  
+https://mitpress.ublish.com/book/understanding-deep-learning?utm_source=chatgpt.com  
+
+
 > A personal research-oriented learning project exploring Large Language Models (LLMs), with a focus on inference systems, memory management, and efficient deployment on resource-constrained hardware.
 
 ---
