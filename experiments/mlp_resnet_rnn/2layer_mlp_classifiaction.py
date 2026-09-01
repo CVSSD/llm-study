@@ -1,6 +1,7 @@
 import torch
 import torchvision
 import random
+import time
 import matplotlib.pyplot as plt
 from torchvision.transforms import v2
 
@@ -44,6 +45,7 @@ def tanh(y):
 
 train_loss, test_loss, test_acc = [], [], []
 for epoch in range(num_epoch):
+    start_time = time.time()
     running_loss = 0.0
     for i, data in enumerate(train_loader):
         X, y = data
@@ -86,8 +88,8 @@ for epoch in range(num_epoch):
 
         test_loss.append(running_loss / len(test_loader.dataset))
         test_acc.append(correct / total)
-
-    print('Epoch finish')
+    end_time = time.time()
+    print(f'Epoch finish Time:{end_time - start_time:.3f}')
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
 ax1.plot(train_loss, label="Train"); ax1.plot(test_loss, label="Test")
@@ -99,4 +101,10 @@ ax2.legend(); ax2.grid(True)
 #ax3.plot(regulization, label='REG')
 #ax2.set(xlabel="Epoch", ylabel="REG", title="REG")
 #ax2.legend(); ax2.grid(True)
-plt.tight_layout(); plt.show()
+plt.tight_layout()
+# 先保存，再显示（show 在交互后端会阻塞/清空画布）
+from pathlib import Path
+save_dir = Path(__file__).resolve().parent / 'figs'
+save_dir.mkdir(exist_ok=True)
+fig.savefig(save_dir / '2layer_mlp.png', dpi=150, bbox_inches='tight')
+plt.show()
